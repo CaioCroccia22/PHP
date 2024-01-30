@@ -9,6 +9,8 @@
     <?php
         //Escrevendo na tela
         echo "Olá mundo!";
+        $var = "Pedro";
+        echo $var
 
     ?>
 
