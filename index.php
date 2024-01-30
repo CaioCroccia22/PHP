@@ -9,8 +9,19 @@
     <?php
         //Escrevendo na tela
         echo "Olá mundo!";
+
+        //Declarando variavel
+        //Variaveis PHP na iniciao com um numero
+        
         $var = "Pedro";
-        echo $var
+        echo $var;
+
+        //Array
+        $lista = array(10,20,30, $var);
+        print_r($lista);
+
+        //Instanciando Objeto  $VAR = new NOME DA CLASSE
+        $Cachorro = new Cachorro
 
     ?>
 
