@@ -18,10 +18,17 @@
 
         //Array
         $lista = array(10,20,30, $var);
+        //Mostra o indice e os valores dentro do array
         print_r($lista);
 
         //Instanciando Objeto  $VAR = new NOME DA CLASSE
-        $Cachorro = new Cachorro
+        $p1 = new Pessoa();
+
+        //Função
+        $p1 -> Cadastro();
+
+        //Chamando o atributo da classe
+        $p1 -> nome = "Pedro";
 
     ?>
 
