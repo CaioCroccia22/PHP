@@ -1,0 +1,7 @@
+<?php
+    //Codigo PHP
+
+?>
+
+
+<?//Codigo ?>
