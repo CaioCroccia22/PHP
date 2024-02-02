@@ -38,6 +38,7 @@
         echo '<br>'.taxa;
 
         //Operadores Aritmeticos e lógicos
+
         var_dump(true && true);
         var_dump(false && true);
         echo '<br>';
@@ -54,7 +55,59 @@
         echo 2 ** 10;
         echo (2 + 3) * 4;
 
-        //Estruturas de controle
+        //Estruturas de controle e de repetição
+
+        //if
+        if(true){
+            echo "Verdadeiro";
+        }else{
+            echo "falso";
+        };
+
+        echo '<hr>';
+
+        //while
+
+        const valor = 5;
+        $cont = 0;
+        while($cont < valor){
+            $cont += 1;
+            echo $cont;
+        }
+
+        echo '<hr>';
+
+        //for
+
+        for($contador = 1; $contador < 10; $contador++){
+            echo $contador;
+        }
+
+        //Percorrendo um array
+        $array = ["Maria", "Pedro", "João", "Carlos"];
+         foreach($array as $valor){
+            echo "$valor <br>";
+
+         }
+
+         //Break e continue
+         $number = 0;
+         for(;;$number++){
+            if($number % 2 == 0){
+                continue;
+            }
+            if ($number > 10){
+                break;
+            }
+         }
+
+         //Função
+
+         function somaSalario($salario){
+            return $salario + 150;
+         }
+
+         somaSalario(1500);
 
 
 
