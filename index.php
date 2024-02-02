@@ -13,7 +13,7 @@
         //Declarando variavel
         //Variaveis PHP na iniciao com um numero
         
-        $var = "Pedro";
+        $nome = "Pedro";
         echo $var;
 
         //Array
@@ -24,11 +24,39 @@
         //Instanciando Objeto  $VAR = new NOME DA CLASSE
         $p1 = new Pessoa();
 
-        //Função
+        //Função $VARIAVEL -> NOME DA FUNÇÂO
         $p1 -> Cadastro();
 
         //Chamando o atributo da classe
         $p1 -> nome = "Pedro";
+
+        //Operações
+        $n1 = 12 + 13;
+        define('Desconto', 10);
+        echo '<br>'.Desconto;
+        const taxa = 5;
+        echo '<br>'.taxa;
+
+        //Operadores Aritmeticos e lógicos
+        var_dump(true && true);
+        var_dump(false && true);
+        echo '<br>';
+        var_dump(true || true);
+        var_dump(false || true);
+        echo '<br>';
+        var_dump(!true);
+
+        var_dump(2 + 3);
+        echo 10 -2;
+        echo 10 / 2;
+        echo 10 * 2;
+        echo 10 % 2;
+        echo 2 ** 10;
+        echo (2 + 3) * 4;
+
+        //Estruturas de controle
+
+
 
     ?>
 
