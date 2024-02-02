@@ -109,7 +109,28 @@
 
          somaSalario(1500);
          echo $salario;
+        
+         //Switch
 
+         $opcao = 3;
+
+         switch($opcao){
+            case 1:
+                echo "Opção numero 1";
+                break;
+                
+            case 2:
+                echo "Opção numero 2";
+                break;
+
+            case 3:
+                echo "Opção numero 3";
+                break;
+
+            default:
+                echo "Opção invalida";
+
+         }
 
 
     ?>
