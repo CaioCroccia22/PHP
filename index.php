@@ -22,7 +22,7 @@
         print_r($lista);
 
         //Instanciando Objeto  $VAR = new NOME DA CLASSE
-        $p1 = new Pessoa();
+        //$p1 = new Pessoa();
 
         //Função $VARIAVEL -> NOME DA FUNÇÂO
         $p1 -> Cadastro();
@@ -108,6 +108,7 @@
          }
 
          somaSalario(1500);
+         echo $salario;
 
 
 
