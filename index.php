@@ -171,7 +171,7 @@
 
          }
 
-
+         //Classes
          class Pessoa{
 
             //Atributos 
@@ -182,12 +182,25 @@
 
          //Metodos
          function imprimiPessoa(){
-            return "Nome: {$this->nome} idade: {$this->idate} Endereço: {$this->endereco}";
+            return "Nome: {$this->nome} idade: {$this->idade} Endereço: {$this->endereco}";
          }
     }
 
+    //Instanciando a classe pessoa
     $p1 = new Pessoa();
     echo $p1 -> nome;
+
+    //Herança
+    class Aluno extends Pessoa{
+        public $matricula =1;
+        public $curso  = "informatica";
+
+        function cancelarMatricula($matricula){
+            $this -> matricula = null;
+        }
+    }
+
+    $a1 = new Aluno();
 
 
     ?>
