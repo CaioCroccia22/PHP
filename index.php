@@ -148,12 +148,11 @@
          }
 
          $cliente = cadastroCliente("Pedro", 15, "Rua flor de ");
-         imprimeCadastro($cliente)
+         imprimeCadastro($cliente);
 
          //Switch
 
          $opcao = 3;
-
          switch($opcao){
             case 1:
                 echo "Opção numero 1";
@@ -171,6 +170,24 @@
                 echo "Opção invalida";
 
          }
+
+
+         class Pessoa{
+
+            //Atributos 
+            public $nome = "Pedro";
+            public $idade = 26;
+            public $endereco = "Rua Flor de Maio";
+         
+
+         //Metodos
+         function imprimiPessoa(){
+            return "Nome: {$this->nome} idade: {$this->idate} Endereço: {$this->endereco}";
+         }
+    }
+
+    $p1 = new Pessoa();
+    echo $p1 -> nome;
 
 
     ?>
