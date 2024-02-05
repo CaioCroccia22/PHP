@@ -201,7 +201,49 @@
     }
 
     $a1 = new Aluno();
+    print_r($a1);
 
+    //Metodos getters e setters
+    // Os metodos getters dão a função de acessar e pegar os dados
+    // Os setters eles modificam os dados 
+
+    class Cachorro{
+        private $nome;
+        private $raca;
+        private $sexo;
+
+
+        public function getNome(){
+            //Palavra this vai referenciar o objeto da classe
+            return $this -> nome;
+        }
+
+
+        //Getters and Setters
+        public function setNome($n){
+            $this->nome = $n;
+        }
+
+        public function getRaca(){
+            return $this->raca;
+        }
+
+        public function getSexo(){
+            $this->sexo;
+        }
+
+        public function setRaca($r){
+            $this->raca = $r;
+        }
+
+        public function setSexo($s){
+            $this->sexo = $s;
+        }
+    }
+
+    $c1 = new Cachorro();
+    $c1->setNome("Maicon");
+    echo $c1->getNome();
 
     ?>
 
