@@ -255,6 +255,7 @@
     
         try {
             $conexao = new PDO('mysql:host=localhost;dbname=php_sardinha', 'root', '');
+            return $conexao;
         }catch(PDOException $e){
             echo 'Codigo de falha: '.$e->getCode();
         }
