@@ -245,6 +245,20 @@
     $c1->setNome("Maicon");
     echo $c1->getNome();
 
+
+    //Conexao PDO
+    function novaConexao(){
+        $dns = 'mysql:host=localhost;dbanme=php_sardinha';
+        $usuario ='root';
+        $senha = '';
+
+    
+        try {
+            $conexao = new PDO('mysql:host=localhost;dbname=php_sardinha', 'root', '');
+        }catch(PDOException $e){
+            echo 'Codigo de falha: '.$e->getCode();
+        }
+    }
     ?>
 
 
