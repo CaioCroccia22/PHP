@@ -124,6 +124,32 @@
 
          }
         
+        echo caneta();
+
+
+         function messagem(){
+            return "Olá mundo!";
+         }
+
+         messagem();
+         $msg = messagem();
+         echo "<br>".$msg;
+         var_dump(messagem());
+
+
+         function cadastroCliente($nome, $idade, $endereco){
+
+            return $array = [$nome, $idade, $endereco];
+            
+         }
+
+         function imprimeCadastro($array){
+            print_r($array);
+         }
+
+         $cliente = cadastroCliente("Pedro", 15, "Rua flor de ");
+         imprimeCadastro($cliente)
+
          //Switch
 
          $opcao = 3;
