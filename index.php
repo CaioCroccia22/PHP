@@ -109,6 +109,17 @@
 
          somaSalario(1500);
          echo $salario;
+
+         //Função dentro da variavel
+
+         $soma = function($a, $b){
+            return $a + $b;
+         };
+
+         echo $soma(10, 8);
+
+
+
         
          //Switch
 
@@ -118,7 +129,7 @@
             case 1:
                 echo "Opção numero 1";
                 break;
-                
+
             case 2:
                 echo "Opção numero 2";
                 break;
