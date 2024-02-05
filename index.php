@@ -119,7 +119,10 @@
          echo $soma(10, 8);
 
 
+         function caneta ($modelo="0.7", $cor="Azul"){
+            return "Modelo: ".$modelo." , Cor:".$cor;
 
+         }
         
          //Switch
 
